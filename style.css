@@ -1,0 +1,44 @@
+/* Nemanja Mitrovic 
+ andre adzonyo kokouvi 
+*/
+
+body
+{
+	padding:10px;
+	background: #FFFF00;
+}
+
+
+.left{float:left; width:20%;}
+.right{float:left; width:70%;}
+
+#nav-list{
+	list-style: none;
+}
+nav
+{
+	padding-left: 30px;
+	font-weight:  bold;
+	color : black;
+	transition: all 1s ease-out;
+}
+
+nav ul li a:hover
+{
+	text-decoration:none;
+	color: red;
+}
+
+.form input {
+	margin:10px;
+}
+.form label {
+	margin:10px;
+}
+
+
+
+
+
+
+
