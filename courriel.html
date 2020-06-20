@@ -1,0 +1,150 @@
+<!-- Nemanja Mitrovic -->
+<!-- andre adzonyo kokouvi -->
+
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Courriel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="left">
+        <ul id="nav-list">
+    	    <li><a id="nouveau-message" href="#nouveau-message">Nouveau message</a></li>
+    			<li><a id="liste-messages" href="#liste-messages">Liste des messages</a></li>
+    			<li><a id="carnet" href="#carnet">Carnet d'addrese</a></li>
+	      </ul>
+    </nav>
+   <div class="right">
+   		<div id="contenuNouveauMessage">
+        <form action="/nouveau-message" method="post" class="form">
+          <div>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="nom_utilisateur">
+          </div>
+          <div>
+            <label for="addresse">Addresse:</label>
+            <input id="addresse_nouveau" name="addresse_utilisateur">
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="msg" name="message_utilisateur"></textarea>
+          </div>
+          <div class="button">
+            <button type="submit">Envoyer</button>
+          </div>
+        </form>
+   		</div>
+   		<div id="contenuListeMessages">
+        <form action="/rechercher-messages" class="form">
+            <div>
+              <input type="search" id="maRecherche" name="q"> 
+              <button type="submit">Rechercher mes messages</button>
+            </div>
+            <ul>
+          <li><p id="message1">Message: Bonjour</p>
+            <p id="addresse1">
+            -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCv4xzLRCnTtlowNevO4ZLCwkj2
+I/syOriPBwxudrKDw83uuLzRBpD5RjtV17eO9Vp3gG2RrM2WH5G2repE8ifYlVYB
+IgSnUv/OqxVDN5ehFa1+7m6AMn3dPTqHYsA+XHMfHRYtJ6vdwEaxW92XuxnvDZn8
+G3y5Cp4eS4wANU8ywwIDAQAB
+-----END PUBLIC KEY-----
+            </p>
+          </li>
+          <li>
+            <p id="message2">Message: Salut</p>
+          <p id="addresse2">
+          -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDcE1rcwoKEvgi+BcmJf3nTK0Av
+bI4CE7nyF5ZGUnTiZHTvluzkri7FftRuhEGNV12J1NeAR1H4u6ckBoC4wKFl7gos
+LKW3uHEA75B2ZHoZbQT0pP70iEc3OLkI9N74EbpV0PGCPDX1JRpuOJfxCB0EiTAb
+eehgU/SmeLHJocnjWwIDAQAB
+-----END PUBLIC KEY-----
+          </p>
+          </li>
+          <li>
+            <p id="message3">Message: Javascript</p>
+          <p id="addresse3">
+            -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCen08e5KVhCfO5jjuqu8Bxzj3E
+5fLNv7DJM7xtcxAdQbdNZo3/El7BekV+SKh4w12YlZK9X1FTRkoZgpqvJ6eYcwWQ
+Rv7hdGGHMGq+e2sez9CfPN3dxE/TNysPDSzt3+jLwYTxYuAQ81eG/ZWWS/nxqJHY
++XYVAG6WF4DGQhbq+wIDAQAB
+-----END PUBLIC KEY-----
+          </p>
+          </li>
+          <li>
+            <p id="message4">Message: HTML</p>
+            <p>Adresse:</p>
+          <p id="addresse4">
+           -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCP0dM/AETVtOl72XJXdXx742GA
+fplj/6etvB3Bw1HQOVZNaqt/3u+ZjM/jxtOlbLcuYtiKLxTiup2UP8GLjqoRYeFJ
+jlqYrGCKno+LBa3LyOdyDBaPnj15Bb7lH01N5dvE7SKOba0ds9XknTo2LQXiAC2Q
+vJHercKGzKZW+lcTGwIDAQAB
+-----END PUBLIC KEY-----
+            </p>
+          </li>
+        </ul>
+        </form>
+   		</div>
+   		<div id="contenuCarnet">
+          <form action="/rechercher-contact" class="form">
+            <div>
+              <input type="search" id="maRecherche" name="q"> 
+              <button type="submit">Rechercher mes contacts</button>
+            </div>
+          </form>
+          <ul>
+          <li>
+            <p>Adresse:</p>
+            <p id="addresse1">
+            -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCv4xzLRCnTtlowNevO4ZLCwkj2
+I/syOriPBwxudrKDw83uuLzRBpD5RjtV17eO9Vp3gG2RrM2WH5G2repE8ifYlVYB
+IgSnUv/OqxVDN5ehFa1+7m6AMn3dPTqHYsA+XHMfHRYtJ6vdwEaxW92XuxnvDZn8
+G3y5Cp4eS4wANU8ywwIDAQAB
+-----END PUBLIC KEY-----
+            </p>
+          </li>
+          <li>
+            <p>Adresse:</p>
+          <p id="addresse2">
+          -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDcE1rcwoKEvgi+BcmJf3nTK0Av
+bI4CE7nyF5ZGUnTiZHTvluzkri7FftRuhEGNV12J1NeAR1H4u6ckBoC4wKFl7gos
+LKW3uHEA75B2ZHoZbQT0pP70iEc3OLkI9N74EbpV0PGCPDX1JRpuOJfxCB0EiTAb
+eehgU/SmeLHJocnjWwIDAQAB
+-----END PUBLIC KEY-----
+          </p>
+          </li>
+          <li>
+            <p>Adresse:</p>
+          <p id="addresse3">
+            -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCen08e5KVhCfO5jjuqu8Bxzj3E
+5fLNv7DJM7xtcxAdQbdNZo3/El7BekV+SKh4w12YlZK9X1FTRkoZgpqvJ6eYcwWQ
+Rv7hdGGHMGq+e2sez9CfPN3dxE/TNysPDSzt3+jLwYTxYuAQ81eG/ZWWS/nxqJHY
++XYVAG6WF4DGQhbq+wIDAQAB
+-----END PUBLIC KEY-----
+          </p>
+          </li>
+          <li>
+            <p>Adresse:</p>
+          <p id="addresse4">
+          -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCP0dM/AETVtOl72XJXdXx742GA
+fplj/6etvB3Bw1HQOVZNaqt/3u+ZjM/jxtOlbLcuYtiKLxTiup2UP8GLjqoRYeFJ
+jlqYrGCKno+LBa3LyOdyDBaPnj15Bb7lH01N5dvE7SKOba0ds9XknTo2LQXiAC2Q
+vJHercKGzKZW+lcTGwIDAQAB
+-----END PUBLIC KEY-----
+            </p>
+          </li>
+        </ul>
+   		</div>
+	</div>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
